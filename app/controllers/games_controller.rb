@@ -21,7 +21,6 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     @game.update(game_params)
     render json: @game, status: 200
-
   end
 
 
